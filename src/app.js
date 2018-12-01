@@ -35,4 +35,4 @@ io.on("connection", socket => {
     io.emit("documents", documents);
   });
 
-  http.listen(4444);
+  http.listen(process.env.PORT || 4444);
